@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ee4b25" />
+    <meta
+      name="description"
+      content="FORM — движение в твоём ритме. Выбери 10, 20 или 30 минут, найди свой план и попробуй тренировку прямо здесь."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:title" content="FORM — двигайся в своём ритме" />
+    <meta
+      property="og:description"
+      content="Не с понедельника. С десяти минут сегодня. Интерактивный концепт о движении без лишнего."
+    />
+    <link rel="canonical" href="https://eddie-dk1.github.io/form-landing/" />
+    <meta property="og:url" content="https://eddie-dk1.github.io/form-landing/" />
+    <meta property="og:image" content="https://eddie-dk1.github.io/form-landing/assets/share-preview.webp" />
+    <meta name="twitter:image" content="https://eddie-dk1.github.io/form-landing/assets/share-preview.webp" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link
+      rel="preload"
+      href="/fonts/display.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/display-cyrillic.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/body.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/body-cyrillic.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <title>FORM — двигайся в своём ритме</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#workout">Перейти к тренировке</a>
+    <main id="app">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <header class="header page-gutter">
+          <a class="wordmark" href="#top" aria-label="FORM — на главную"
+            >FORM</a
+          >
+          <nav aria-label="Основная навигация">
+            <a href="#approach">Подход</a>
+            <a href="#workout">Тренировки</a>
+            <a
+              class="nav-arrow"
+              href="#workout"
+              aria-label="Подобрать тренировку"
+              ><span aria-hidden="true">↗</span></a
+            >
+          </nav>
+        </header>
+        <div class="hero-art" aria-hidden="true">
+          <svg
+            class="hero-brand"
+            viewBox="0 0 1000 300"
+            preserveAspectRatio="none"
+          >
+            <text
+              x="0"
+              y="287"
+              textLength="1000"
+              lengthAdjust="spacingAndGlyphs"
+            >
+              FORM
+            </text>
+          </svg>
+          <span class="hero-stripe"></span>
+          <img
+            class="athlete athlete-echo"
+            src="/assets/athlete.webp"
+            alt=""
+            width="1024"
+            height="1024"
+          />
+          <img
+            class="athlete athlete-main"
+            src="/assets/athlete.webp"
+            alt=""
+            width="1024"
+            height="1024"
+            fetchpriority="high"
+          />
+        </div>
+        <div class="hero-copy">
+          <h1 class="display" id="hero-title">
+            <span>Двигайся</span><span>в своём</span><span>ритме<i>.</i></span>
+          </h1>
+          <p>Тренировки, которые помещаются в твой день.</p>
+          <a class="button button-orange hero-cta" href="#workout"
+            ><span id="hero-cta-text">Найти свои 10 минут</span
+            ><span class="arrow" aria-hidden="true">↗</span></a
+          >
+        </div>
+        <div
+          class="hero-duration"
+          role="group"
+          aria-label="Выбрать длительность тренировки"
+        >
+          <button type="button" data-duration="10" aria-pressed="true">
+            10 <span>мин</span></button
+          ><span class="slash" aria-hidden="true">/</span>
+          <button type="button" data-duration="20" aria-pressed="false">
+            20 <span>мин</span></button
+          ><span class="slash" aria-hidden="true">/</span>
+          <button type="button" data-duration="30" aria-pressed="false">
+            30 <span>мин</span>
+          </button>
+        </div>
+        <div class="hero-bottom page-gutter">
+          <span class="hero-bottom-line"></span>
+          <p>Движение начинается с тебя.</p>
+          <a href="#approach" aria-label="Узнать о FORM"
+            ><span aria-hidden="true">↓</span></a
+          >
+        </div>
+      </section>
+
+      <section
+        class="story section-pad"
+        id="approach"
+        aria-labelledby="story-title"
+      >
+        <p class="eyebrow reveal">01 <span>/</span> Твой ритм</p>
+        <div class="story-top">
+          <h2 class="display reveal" id="story-title">
+            Между<br />делом.<br />Для себя<i>.</i>
+          </h2>
+          <div class="story-image reveal">
+            <span class="story-stripe" aria-hidden="true"></span
+            ><img
+              src="/assets/sneakers.webp"
+              alt="Кроссовки крупным планом: движение начинается с простого шага"
+              width="1200"
+              height="1200"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <div class="story-bottom">
+          <div class="story-copy reveal">
+            <p>
+              Не обязательно освобождать вечер. Начни с десяти минут — дома или
+              на улице, без оборудования.
+            </p>
+            <a class="text-link" href="#workout"
+              >Найти время для себя <span aria-hidden="true">↗</span></a
+            >
+          </div>
+          <dl class="facts reveal">
+            <div>
+              <dt>10–30</dt>
+              <dd>минут на движение</dd>
+            </div>
+            <div>
+              <dt>2</dt>
+              <dd>места для старта</dd>
+            </div>
+            <div>
+              <dt>0</dt>
+              <dd>лишнего оборудования</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section
+        class="workout section-pad"
+        id="workout"
+        aria-labelledby="workout-title"
+      >
+        <p class="eyebrow reveal">02 <span>/</span> Попробуй сейчас</p>
+        <div class="workout-grid">
+          <div class="workout-settings">
+            <h2 class="display reveal" id="workout-title">
+              Есть время.<br />Есть план<i>.</i>
+            </h2>
+            <form id="workout-form">
+              <fieldset class="duration-field">
+                <legend>Сколько есть времени?</legend>
+                <div class="duration-options">
+                  <label
+                    ><input
+                      type="radio"
+                      name="duration"
+                      value="10"
+                      checked
+                    /><span><strong>10</strong><small>мин</small></span></label
+                  >
+                  <label
+                    ><input type="radio" name="duration" value="20" /><span
+                      ><strong>20</strong><small>мин</small></span
+                    ></label
+                  >
+                  <label
+                    ><input type="radio" name="duration" value="30" /><span
+                      ><strong>30</strong><small>мин</small></span
+                    ></label
+                  >
+                </div>
+              </fieldset>
+              <fieldset class="place-field">
+                <legend>Где двигаемся?</legend>
+                <div class="place-options">
+                  <label
+                    ><input
+                      type="radio"
+                      name="place"
+                      value="home"
+                      checked
+                    /><span>Дома <span aria-hidden="true">↘</span></span></label
+                  ><label
+                    ><input type="radio" name="place" value="outside" /><span
+                      >На улице <span aria-hidden="true">↗</span></span
+                    ></label
+                  >
+                </div>
+              </fieldset>
+            </form>
+            <div class="plan-heading">
+              <span id="plan-title">Твои 10 минут дома</span
+              ><span>План занятия</span>
+            </div>
+            <ol class="exercise-list" id="exercise-list"></ol>
+          </div>
+          <div class="timer-column">
+            <p class="workout-intro">
+              Выбери время и место.<br />Попробуй короткую тренировку<br
+                class="desktop-break"
+              />
+              прямо здесь.
+            </p>
+            <div class="timer" id="session-timer" data-status="idle">
+              <svg class="timer-track" viewBox="0 0 400 400" aria-hidden="true">
+                <circle class="track-base" cx="200" cy="200" r="188" />
+                <circle
+                  class="track-progress"
+                  id="timer-progress"
+                  cx="200"
+                  cy="200"
+                  r="188"
+                  pathLength="100"
+                />
+                <path
+                  class="timer-ticks"
+                  d="M200 19v12 M381 200h-12 M200 381v-12 M19 200h12"
+                />
+              </svg>
+              <div class="timer-face">
+                <p class="timer-topline" id="timer-topline">
+                  Твой ритм. Твоё время.
+                </p>
+                <output
+                  class="timer-digits"
+                  id="timer-digits"
+                  role="timer"
+                  aria-live="off"
+                  aria-label="До конца занятия"
+                  >10:00</output
+                >
+                <p class="timer-stage" id="timer-stage">
+                  Готов, когда ты готов
+                </p>
+                <p class="stage-remaining" id="stage-remaining">
+                  Без регистрации. Без оборудования.
+                </p>
+              </div>
+            </div>
+            <button
+              class="button button-orange timer-start"
+              id="timer-toggle"
+              type="button"
+            >
+              <span>Начать тренировку</span
+              ><span class="arrow" aria-hidden="true">↗</span>
+            </button>
+            <button class="timer-reset" id="timer-reset" type="button">
+              Сбросить <span aria-hidden="true">↺</span>
+            </button>
+            <p class="timer-note">
+              Демонстрационный план. Подстраивай темп под себя.
+            </p>
+            <p
+              class="sr-only"
+              id="session-announcement"
+              role="status"
+              aria-live="polite"
+            ></p>
+          </div>
+        </div>
+        <noscript
+          ><p class="noscript-note">
+            Для подбора плана и таймера включи JavaScript. Остальные разделы
+            доступны без него.
+          </p></noscript
+        >
+      </section>
+
+      <section class="how section-pad" id="how" aria-labelledby="how-title">
+        <p class="eyebrow reveal">03 <span>/</span> Просто начать</p>
+        <h2 class="display reveal" id="how-title">
+          Без сложных<br />правил<i>.</i>
+        </h2>
+        <ol class="steps">
+          <li class="reveal">
+            <span class="step-number" aria-hidden="true">01</span>
+            <h3>Найди окно</h3>
+            <p>
+              10, 20 или 30 минут. Выбирай то, что помещается в сегодняшний
+              день.
+            </p>
+          </li>
+          <li class="reveal">
+            <span class="step-number" aria-hidden="true">02</span>
+            <h3>Выбери место</h3>
+            <p>
+              Дома или на улице. Тебе не понадобится специальное оборудование.
+            </p>
+          </li>
+          <li class="reveal">
+            <span class="step-number" aria-hidden="true">03</span>
+            <h3>Включайся</h3>
+            <p>Открой план, запусти таймер и двигайся в комфортном темпе.</p>
+          </li>
+        </ol>
+        <div class="outline-word" aria-hidden="true">
+          <span>Движение</span><span>↗</span>
+        </div>
+      </section>
+
+      <section class="closing section-pad" aria-labelledby="closing-title">
+        <svg
+          class="running-lanes"
+          viewBox="0 0 500 800"
+          preserveAspectRatio="none"
+          aria-hidden="true"
+        >
+          <path
+            d="M450 -40v130C450 260 150 260 150 390v300c0 80-60 100-90 150"
+          />
+          <path d="M390 -40v130C390 230 90 230 90 390v300c0 80-60 100-90 150" />
+          <path d="M330 -40v130C330 200 30 200 30 390v300c0 80-60 100-90 150" />
+        </svg>
+        <div class="closing-main">
+          <h2 class="display reveal" id="closing-title">Твой<br />ход.</h2>
+          <div class="closing-copy reveal">
+            <p>Не с понедельника.<br />С десяти минут сегодня.</p>
+            <a class="button button-black" href="#workout"
+              >Начать движение
+              <span class="arrow" aria-hidden="true">↗</span></a
+            ><span class="closing-small">Без регистрации. Прямо здесь.</span>
+          </div>
+        </div>
+        <footer class="footer">
+          <a class="wordmark" href="#top" aria-label="FORM — наверх">FORM</a>
+          <p>Тестовый концепт<span>/</span>Сделано с любовью</p>
+          <a href="#top">Наверх <span aria-hidden="true">↑</span></a>
+        </footer>
+      </section>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,226 @@
+[
+  {
+    "height": 625,
+    "horizontalOverflow": false,
+    "sections": [
+      {
+        "height": 625,
+        "name": "hero-title",
+        "overflow": []
+      },
+      {
+        "height": 625,
+        "name": "story-title",
+        "overflow": []
+      },
+      {
+        "height": 625,
+        "name": "workout-title",
+        "overflow": []
+      },
+      {
+        "height": 625,
+        "name": "how-title",
+        "overflow": []
+      },
+      {
+        "height": 625,
+        "name": "closing-title",
+        "overflow": []
+      }
+    ],
+    "width": 1255
+  },
+  {
+    "height": 600,
+    "horizontalOverflow": false,
+    "sections": [
+      {
+        "height": 600,
+        "name": "hero-title",
+        "overflow": []
+      },
+      {
+        "height": 600,
+        "name": "story-title",
+        "overflow": []
+      },
+      {
+        "height": 600,
+        "name": "workout-title",
+        "overflow": []
+      },
+      {
+        "height": 600,
+        "name": "how-title",
+        "overflow": []
+      },
+      {
+        "height": 600,
+        "name": "closing-title",
+        "overflow": []
+      }
+    ],
+    "width": 1366
+  },
+  {
+    "height": 900,
+    "horizontalOverflow": false,
+    "sections": [
+      {
+        "height": 900,
+        "name": "hero-title",
+        "overflow": []
+      },
+      {
+        "height": 900,
+        "name": "story-title",
+        "overflow": []
+      },
+      {
+        "height": 900,
+        "name": "workout-title",
+        "overflow": []
+      },
+      {
+        "height": 900,
+        "name": "how-title",
+        "overflow": []
+      },
+      {
+        "height": 900,
+        "name": "closing-title",
+        "overflow": []
+      }
+    ],
+    "width": 1440
+  },
+  {
+    "height": 700,
+    "horizontalOverflow": false,
+    "sections": [
+      {
+        "height": 700,
+        "name": "hero-title",
+        "overflow": []
+      },
+      {
+        "height": 700,
+        "name": "story-title",
+        "overflow": []
+      },
+      {
+        "height": 700,
+        "name": "workout-title",
+        "overflow": []
+      },
+      {
+        "height": 700,
+        "name": "how-title",
+        "overflow": []
+      },
+      {
+        "height": 700,
+        "name": "closing-title",
+        "overflow": []
+      }
+    ],
+    "width": 1920
+  },
+  {
+    "height": 844,
+    "horizontalOverflow": false,
+    "sections": [
+      {
+        "height": 844,
+        "name": "hero-title",
+        "overflow": []
+      },
+      {
+        "height": 844,
+        "name": "story-title",
+        "overflow": []
+      },
+      {
+        "height": 844,
+        "name": "workout-title",
+        "overflow": []
+      },
+      {
+        "height": 844,
+        "name": "how-title",
+        "overflow": []
+      },
+      {
+        "height": 844,
+        "name": "closing-title",
+        "overflow": []
+      }
+    ],
+    "width": 390
+  },
+  {
+    "height": 667,
+    "horizontalOverflow": false,
+    "sections": [
+      {
+        "height": 667,
+        "name": "hero-title",
+        "overflow": []
+      },
+      {
+        "height": 667,
+        "name": "story-title",
+        "overflow": []
+      },
+      {
+        "height": 667,
+        "name": "workout-title",
+        "overflow": []
+      },
+      {
+        "height": 667,
+        "name": "how-title",
+        "overflow": []
+      },
+      {
+        "height": 667,
+        "name": "closing-title",
+        "overflow": []
+      }
+    ],
+    "width": 375
+  },
+  {
+    "height": 568,
+    "horizontalOverflow": false,
+    "sections": [
+      {
+        "height": 568,
+        "name": "hero-title",
+        "overflow": []
+      },
+      {
+        "height": 568,
+        "name": "story-title",
+        "overflow": []
+      },
+      {
+        "height": 568,
+        "name": "workout-title",
+        "overflow": []
+      },
+      {
+        "height": 568,
+        "name": "how-title",
+        "overflow": []
+      },
+      {
+        "height": 568,
+        "name": "closing-title",
+        "overflow": []
+      }
+    ],
+    "width": 320
+  }
+]

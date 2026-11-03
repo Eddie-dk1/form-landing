@@ -1,0 +1,734 @@
+/* Each scene follows the available browser height, including short laptop windows. */
+:root {
+  --scene-padding: clamp(18px, 3.5dvh, 38px);
+  scroll-padding-block: 0;
+  scroll-snap-type: y proximity;
+}
+
+#app > section {
+  scroll-snap-align: start;
+  scroll-margin-block: 0;
+}
+
+.hero {
+  height: 100dvh;
+  min-height: 0;
+}
+
+.header {
+  height: clamp(48px, 8dvh, 76px);
+}
+
+.hero-art {
+  inset: clamp(48px, 8dvh, 76px) 0 0;
+}
+
+.hero-brand {
+  top: 0;
+  left: 2.4%;
+  width: 95.2%;
+  height: min(33dvh, 360px);
+  max-width: none;
+  transform: none;
+}
+
+.hero-brand text {
+  font-family: var(--display);
+  font-weight: 900;
+  font-size: 390px;
+  letter-spacing: -0.03em;
+  fill: currentColor;
+}
+
+.hero-copy {
+  bottom: clamp(64px, 10dvh, 100px);
+}
+
+.hero h1 {
+  font-size: clamp(40px, min(8.1vw, 10.4dvh), 132px);
+  margin-bottom: clamp(8px, 1.5dvh, 14px);
+}
+
+.hero-copy > p {
+  font-size: clamp(15px, min(1.5vw, 2.5dvh), 22px);
+  margin-bottom: clamp(10px, 2dvh, 18px);
+}
+
+.hero-cta {
+  min-height: clamp(44px, 6dvh, 54px);
+  padding-block: 10px;
+}
+
+.athlete {
+  top: -1%;
+  left: 26%;
+  width: 68%;
+  height: 91%;
+  transform: translate3d(var(--drift-x), var(--drift-y), 0);
+  transition: none;
+  will-change: transform;
+}
+
+.athlete-echo {
+  transform: translate3d(calc(var(--drift-x) - 40px), var(--drift-y), 0);
+}
+
+.hero-duration {
+  bottom: clamp(68px, 11dvh, 110px);
+}
+
+.hero-bottom {
+  bottom: clamp(14px, 2.5dvh, 26px);
+}
+
+.section-pad {
+  height: 100dvh;
+  min-height: 0;
+  padding-block: var(--scene-padding);
+}
+
+.story {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  gap: clamp(12px, 2dvh, 24px);
+}
+
+.story-top {
+  margin: 0;
+  align-items: center;
+  min-height: 0;
+}
+
+.story h2 {
+  font-size: clamp(48px, min(11vw, 15dvh), 170px);
+}
+
+.story-image {
+  height: min(52dvh, 40vw);
+  max-height: 100%;
+  margin-top: 0;
+}
+
+.story-bottom {
+  margin-top: 0;
+  gap: 6%;
+}
+
+.story-copy > p {
+  font-size: clamp(17px, min(1.9vw, 3dvh), 26px);
+  line-height: 1.35;
+}
+
+.text-link {
+  font-size: clamp(16px, 2.4dvh, 19px);
+  margin-top: clamp(10px, 1.8dvh, 22px);
+}
+
+.facts dt {
+  font-size: clamp(40px, min(6.5vw, 10dvh), 100px);
+}
+
+.facts dd {
+  margin-top: 8px;
+  font-size: clamp(10px, 1.6dvh, 13px);
+}
+
+.workout {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  gap: clamp(10px, 2dvh, 22px);
+}
+
+.workout .eyebrow {
+  margin-bottom: 0;
+}
+
+.workout-grid {
+  min-height: 0;
+  gap: 6%;
+}
+
+.workout-settings {
+  display: grid;
+  grid-template-rows: auto auto auto minmax(0, 1fr);
+  gap: clamp(8px, 1.6dvh, 18px);
+  min-height: 0;
+}
+
+.workout h2 {
+  font-size: clamp(42px, min(8.2vw, 9.5dvh), 112px);
+  margin: 0;
+}
+
+#workout-form {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  align-items: end;
+  gap: clamp(12px, 2vw, 28px);
+}
+
+.workout legend {
+  font-size: clamp(10px, 1.7dvh, 13px);
+  letter-spacing: 0.12em;
+  margin-bottom: 10px;
+}
+
+.duration-options {
+  gap: 10px;
+}
+
+.duration-options strong {
+  font-size: clamp(36px, 7dvh, 72px);
+}
+
+.duration-options small {
+  font-size: 10px;
+  margin-top: 2px;
+}
+
+.duration-options label > span {
+  padding-block: 0 7px;
+  border-bottom-width: 3px;
+}
+
+.place-field {
+  margin: 0;
+}
+
+.place-options {
+  gap: 8px;
+}
+
+.place-options label > span {
+  min-height: 44px;
+  padding: 9px;
+  font-size: clamp(15px, 2.2dvh, 19px);
+  gap: 8px;
+}
+
+.place-options label > span > span {
+  font-size: 18px;
+}
+
+.plan-heading {
+  font-size: 11px;
+  margin: 0;
+}
+
+.exercise-list {
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.exercise-list li {
+  flex: 1;
+}
+
+.exercise-list summary {
+  min-height: 32px;
+  padding-block: clamp(5px, 1.1dvh, 12px);
+}
+
+.exercise-number {
+  font-size: clamp(20px, 3dvh, 28px);
+  min-width: 26px;
+}
+
+.exercise-name {
+  font-size: clamp(17px, 2.8dvh, 23px);
+}
+
+.exercise-time {
+  font-size: 13px;
+}
+
+.exercise-list details p {
+  padding: 0 15px 10px 41px;
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+.timer-column {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto auto auto;
+  gap: clamp(7px, 1.2dvh, 14px);
+  padding-left: 10%;
+  min-height: 0;
+}
+
+.workout-intro {
+  font-size: clamp(16px, 2.5dvh, 23px);
+  line-height: 1.25;
+  margin: 0;
+}
+
+.timer {
+  width: min(100%, 48dvh);
+  height: auto;
+  max-width: 490px;
+  max-height: 100%;
+  align-self: center;
+  justify-self: center;
+}
+
+.timer-face {
+  padding: 8%;
+}
+
+.timer-topline {
+  font-size: 10px;
+  min-height: 0;
+}
+
+.timer-digits {
+  font-size: clamp(64px, min(10vw, 15dvh), 145px);
+}
+
+.timer-stage {
+  font-size: clamp(16px, 2.6dvh, 22px);
+}
+
+.stage-remaining {
+  font-size: 11px;
+  margin-top: 7px;
+}
+
+.timer-start {
+  margin: 0;
+  min-height: clamp(44px, 6dvh, 60px);
+  font-size: clamp(17px, 2.5dvh, 22px);
+  padding: 10px 18px;
+}
+
+.timer-reset {
+  justify-self: center;
+  margin: 0;
+  padding-block: 3px;
+  font-size: 15px;
+}
+
+.timer-note {
+  margin: 0;
+  padding-top: 10px;
+  font-size: 12px;
+  line-height: 1.35;
+}
+
+.how {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto auto;
+  gap: clamp(12px, 2dvh, 24px);
+}
+
+.how h2 {
+  align-self: center;
+  font-size: clamp(50px, min(10.8vw, 16dvh), 170px);
+  margin: 0;
+}
+
+.steps li {
+  padding: clamp(12px, 2dvh, 24px) 30px 0 0;
+}
+
+.step-number {
+  font-size: clamp(48px, 10dvh, 110px);
+}
+
+.steps h3 {
+  font-size: clamp(26px, 4.5dvh, 43px);
+  margin: 8px 0;
+}
+
+.steps p {
+  font-size: clamp(16px, 2.5dvh, 21px);
+}
+
+.outline-word {
+  font-size: min(18vw, 17dvh);
+  margin: 0;
+}
+
+.closing {
+  display: grid;
+  grid-template-rows: minmax(0, 1fr) auto;
+  gap: 20px;
+}
+
+.closing-main {
+  min-height: 0;
+}
+
+.closing h2 {
+  font-size: clamp(100px, min(27vw, 43dvh), 430px);
+}
+
+.closing-copy {
+  margin: 0;
+}
+
+.closing-copy > p {
+  font-size: clamp(25px, min(3.3vw, 6dvh), 55px);
+}
+
+.footer {
+  margin: 0;
+  padding-top: clamp(12px, 2dvh, 24px);
+}
+
+.will-reveal {
+  transform: translate3d(0, 16px, 0);
+  transition:
+    opacity 800ms cubic-bezier(0.22, 1, 0.36, 1),
+    transform 800ms cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+
+.will-reveal.is-visible {
+  transform: translate3d(0, 0, 0);
+}
+
+@media (max-width: 760px) {
+  :root {
+    --scene-padding: clamp(16px, 3dvh, 28px);
+  }
+  .eyebrow {
+    font-size: 11px;
+  }
+  .header nav {
+    gap: 16px;
+  }
+  .hero-brand {
+    left: 3%;
+    width: 94%;
+    height: min(30dvh, 38vw);
+  }
+  .athlete {
+    left: 8%;
+    width: 96%;
+    height: min(40dvh, calc(100dvh - 420px));
+  }
+  .hero-copy {
+    bottom: clamp(94px, 13dvh, 115px);
+    width: auto;
+  }
+  .hero h1 {
+    font-size: min(17vw, 9dvh);
+    width: 80%;
+    margin-bottom: 10px;
+  }
+  .hero-copy > p {
+    font-size: 16px;
+    line-height: 1.3;
+    margin-bottom: 12px;
+  }
+  .hero-cta {
+    min-height: 44px;
+    font-size: 17px;
+  }
+  .hero-duration {
+    bottom: 46px;
+    gap: 20px;
+  }
+  .hero-duration button {
+    min-height: 36px;
+    padding-block: 6px;
+  }
+  .hero-bottom {
+    bottom: 12px;
+  }
+  .story {
+    gap: 16px;
+  }
+  .story h2 {
+    font-size: min(15vw, 11dvh);
+  }
+  .story-top {
+    grid-template-columns: 1.15fr 1fr;
+  }
+  .story-image {
+    height: min(43dvh, 55vw);
+    margin-top: 0;
+  }
+  .story-bottom {
+    grid-template-columns: 1fr;
+    gap: clamp(18px, 3dvh, 28px);
+  }
+  .story-copy > p {
+    font-size: clamp(17px, 2.8dvh, 21px);
+  }
+  .facts dt {
+    font-size: min(14vw, 8dvh);
+  }
+  .facts dd {
+    font-size: 10px;
+  }
+  .workout-grid {
+    grid-template-columns: 1.1fr 0.9fr;
+    grid-template-rows: auto auto auto minmax(0, 1fr);
+    gap: clamp(10px, 1.7dvh, 18px) 16px;
+  }
+  .workout-settings {
+    display: contents;
+  }
+  .workout h2 {
+    grid-column: 1 / -1;
+    font-size: min(16vw, 9dvh);
+  }
+  #workout-form {
+    grid-column: 1 / -1;
+    gap: 16px;
+  }
+  .workout legend {
+    font-size: 10px;
+    letter-spacing: 0.07em;
+    margin-bottom: 8px;
+  }
+  .duration-options strong {
+    font-size: min(12vw, 6.5dvh);
+  }
+  .duration-options label > span {
+    padding-bottom: 5px;
+  }
+  .place-options {
+    gap: 6px;
+  }
+  .place-options label > span {
+    font-size: 14px;
+    padding: 8px 6px;
+    justify-content: center;
+    white-space: nowrap;
+  }
+  .place-options label > span > span {
+    display: none;
+  }
+  .plan-heading {
+    grid-column: 1 / -1;
+    font-size: 10px;
+    gap: 10px;
+  }
+  .exercise-list {
+    grid-column: 1;
+    gap: 0;
+  }
+  .exercise-list summary {
+    gap: 5px;
+    min-height: 38px;
+    padding-block: 7px;
+  }
+  .exercise-number {
+    font-size: 19px;
+    min-width: 19px;
+  }
+  .exercise-name {
+    font-size: 16px;
+  }
+  .exercise-time {
+    font-size: 11px;
+  }
+  .exercise-expand {
+    font-size: 17px;
+    min-width: 10px;
+  }
+  .exercise-list details p {
+    padding: 0 0 8px 24px;
+    font-size: 12px;
+  }
+  .timer-column {
+    grid-column: 2;
+    border: 0;
+    padding: 0;
+    max-width: none;
+    margin: 0;
+    align-self: center;
+    grid-template-rows: auto auto auto auto;
+    gap: 12px;
+  }
+  .workout-intro {
+    display: none;
+  }
+  .timer {
+    width: 100%;
+    max-width: 250px;
+  }
+  .timer-topline,
+  .stage-remaining {
+    display: none;
+  }
+  .timer-digits {
+    font-size: min(15vw, 10dvh);
+  }
+  .timer-stage {
+    font-size: clamp(12px, 3.3vw, 16px);
+    margin-top: 3px;
+    max-width: 95%;
+  }
+  .timer-start {
+    min-height: 48px;
+    padding: 10px 8px;
+    font-size: 16px;
+    gap: 6px;
+  }
+  .timer-start .arrow {
+    font-size: 20px;
+  }
+  .timer-reset {
+    font-size: 14px;
+  }
+  .timer-note {
+    font-size: 11px;
+    padding-top: 8px;
+  }
+  .how {
+    grid-template-rows: auto auto minmax(0, 1fr) auto;
+    gap: 18px;
+  }
+  .how h2 {
+    font-size: min(16.5vw, 11dvh);
+  }
+  .steps {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .steps li {
+    grid-template-columns: 56px 1fr;
+    align-content: center;
+    gap: 0 16px;
+    padding: 12px 0;
+  }
+  .step-number {
+    font-size: min(16vw, 8dvh);
+  }
+  .steps h3 {
+    font-size: 28px;
+    margin: 0 0 6px;
+  }
+  .steps p {
+    font-size: 16px;
+    line-height: 1.3;
+  }
+  .outline-word {
+    font-size: min(23vw, 11dvh);
+  }
+  .closing-main {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.2fr 1fr;
+    gap: 20px;
+  }
+  .closing h2 {
+    font-size: min(44vw, 33dvh);
+  }
+  .closing-copy {
+    align-self: center;
+  }
+  .closing-copy > p {
+    font-size: clamp(28px, 4dvh, 38px);
+    margin-bottom: 18px;
+  }
+  .closing-copy .button {
+    min-height: 48px;
+    font-size: 20px;
+  }
+  .closing-small {
+    margin-top: 10px;
+    font-size: 11px;
+  }
+  .footer {
+    row-gap: 14px;
+    padding-top: 14px;
+  }
+}
+
+@media (max-width: 760px) and (max-height: 650px) {
+  :root {
+    --scene-padding: 16px;
+  }
+  .story {
+    gap: 10px;
+  }
+  .story-bottom {
+    gap: 14px;
+  }
+  .story-copy > p {
+    font-size: 17px;
+  }
+  .text-link {
+    margin-top: 8px;
+  }
+  .workout-grid {
+    gap: 10px 12px;
+  }
+  .workout h2 {
+    font-size: min(16vw, 8.5dvh);
+  }
+  .workout legend {
+    font-size: 9px;
+  }
+  .duration-options {
+    gap: 6px;
+  }
+  .place-options label > span {
+    font-size: 13px;
+  }
+  .exercise-list summary {
+    min-height: 34px;
+    padding-block: 5px;
+  }
+  .exercise-name {
+    font-size: 14px;
+  }
+  .exercise-number {
+    font-size: 17px;
+    min-width: 16px;
+  }
+  .exercise-time {
+    font-size: 10px;
+  }
+  .timer-column {
+    gap: 8px;
+  }
+  .timer-start {
+    font-size: 14px;
+  }
+  .how {
+    gap: 12px;
+  }
+  .steps li {
+    padding-block: 8px;
+  }
+  .steps h3 {
+    font-size: 25px;
+  }
+  .steps p {
+    font-size: 15px;
+  }
+  .closing-main {
+    gap: 12px;
+  }
+  .closing-copy > p {
+    font-size: 28px;
+    margin-bottom: 12px;
+  }
+  .closing .footer {
+    row-gap: 10px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    scroll-behavior: auto;
+    scroll-snap-type: none;
+  }
+  .will-reveal {
+    transform: none;
+    opacity: 1;
+    transition: none;
+  }
+  .athlete {
+    transform: none;
+    will-change: auto;
+  }
+  .athlete-echo {
+    transform: translateX(-30px);
+  }
+}
