@@ -53,11 +53,10 @@ Sofia Sans Extra Condensed и Roboto Condensed хранятся локально
 - `concepts/` — три исходных направления; `concepts/form/` — референсы секций FORM.
 - `docs/prompts.json` и `docs/form-generation-prompts.json` — точные промпты генерации.
 - `docs/form-art-direction.md` — разбор выбранной визуальной системы.
-- `docs/submission.md` — текст для работодателя и два ключевых промпта.
 - `docs/qa.md` и `docs/screenshots/` — результаты проверки и скриншоты.
 
 ## Публикация
 
 GitHub Actions запускает тесты, собирает сайт и публикует dist/ через GitHub Pages при обновлении ветки main. Конфигурация — .github/workflows/pages.yml.
 
-Бесплатный хостинг — GitHub Pages, платный домен не нужен. Текст для отправки с публичной ссылкой — docs/submission.md.
+Бесплатный хостинг — GitHub Pages, платный домен не нужен.
